@@ -1,0 +1,6 @@
+@apiUrl = https://fw-teaching.fi/demo/wdbocms/api/v1/products/
+
+GET {{apiUrl}} 
+
+###
+GET {{apiUrl}}/1002
