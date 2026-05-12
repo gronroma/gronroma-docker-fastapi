@@ -1,6 +1,28 @@
 @apiUrl = https://fw-teaching.fi/demo/wdbocms/api/v1/products/
 
+### Get all products
+
 GET {{apiUrl}} 
 
-###
+### Get product with id 1002
 GET {{apiUrl}}/1002
+
+### Create a new product
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+    "name": "Jeans",
+    "price": 19.99
+}
+
+### Delete product
+DELETE {{apiUrl}}/1005
+
+### Update product info
+PATCH {{apiUrl}}/1003
+Content-Type: application/json
+
+{
+    "price": 14.99
+}
